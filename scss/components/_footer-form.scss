@@ -1,0 +1,31 @@
+.footer-form {
+    display: flex;
+    gap: 12px;
+
+  &__input {
+    width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: #2F303A;
+    border-radius: 4px;
+    padding: 16px;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    color: #FFFFFF;
+    outline: transparent;
+
+    &:hover,
+    &:focus {
+      border-color: #2196F3;
+    }
+    &::placeholder {
+      font-size: 16px;
+      line-height: calc(20 / 16);
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  &__icon {
+    fill: #FFFFFF;
+    margin-left: 10px;
+  }
+}

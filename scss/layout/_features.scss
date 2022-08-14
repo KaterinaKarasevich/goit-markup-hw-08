@@ -1,0 +1,30 @@
+.features {
+  //@extend %section;
+ @include section;
+
+  
+
+  &__title {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    color: #212121;
+    text-transform: uppercase;
+
+    text-align: center;
+    @media screen and (min-width: 768px) {
+        text-align: left;
+      }
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    padding: 25px 100px;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+  }
+}

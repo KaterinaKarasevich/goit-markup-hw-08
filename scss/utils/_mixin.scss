@@ -1,0 +1,31 @@
+
+@mixin section ($padding: 60px) {
+    padding-top: $padding;
+    padding-bottom: $padding;
+    
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        }
+}
+    
+
+
+
+
+
+
+
+
+/*@mixin fonts ($fs: 14px, $lh: 24px, $fw: 400, $ls: 0.03em) {
+    font-size: $fs;
+    line-height: $lh;
+    font-weight: $fw;
+    letter-spacing: $ls;
+    
+}
+
+ font-size: 14px;
+ line-height: calc(24 / 14);
+ font-weight: 400;
+ letter-spacing: 0.03em;*/

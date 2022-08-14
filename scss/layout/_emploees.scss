@@ -1,0 +1,33 @@
+  .emploees {
+      @include section;
+      background-color: #F5F4FA;
+
+    &__item {
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+    }
+
+    &__description {
+      padding: 30px 24px;
+      border: 1px solid #fff;
+      border-top: none;
+      text-align: center;
+      background-color: #FFFFFF;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+      //@include fonts (16px, 19px, 500);
+     
+      font-size: 16px;
+      line-height: calc(19 / 16);
+      font-weight: 500;
+      color: #212121;
+    }
+
+    &__text {
+      margin-bottom: 16px;
+      font-size: 16px;
+      line-height: calc(19 / 16);
+    }
+}

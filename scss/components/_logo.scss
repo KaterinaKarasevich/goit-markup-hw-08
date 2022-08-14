@@ -1,0 +1,21 @@
+.logo {
+    color: #2196F3;
+
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+    }
+
+    &--studio-black {
+    color:#2F303A;
+    }
+
+    &--studio-white {
+        color: #FFFFFF;
+    }
+  }
+

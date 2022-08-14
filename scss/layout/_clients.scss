@@ -1,0 +1,25 @@
+.clients {
+  @include section;
+
+  &__item {
+    --item: 6;
+  }
+
+  &__link {
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    bottom: 4px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #AFB1B8;
+    transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1), border 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      fill: #2196F3;
+      border: 1px solid #2196F3;
+    }
+  }
+}
