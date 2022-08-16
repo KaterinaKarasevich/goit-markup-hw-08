@@ -1,7 +1,29 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
+    
     background-color: #2F303A;
+
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        
+        @media screen and (min-width: 1200px) {
+           
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            gap: 70px;
+        }
+       
+    }
 
     &__logo {
       display: inline-block;
@@ -9,10 +31,13 @@
     }
 
     &__item {
+      
       color: #FFFFFF;
-      &:last-child {
-        margin-left: auto;
-      }
+      @media screen and (min-width: 1200px) {
+          &:last-child {
+              margin-left: auto;
+          }
+       }
     }
 
     &__text {
@@ -24,9 +49,21 @@
       color: #FFFFFF;
     }
 
-    &__container {
-      display: flex;
-      align-items: baseline;
-      gap: 70px;
-    }
+    
 }
+.footer__tablet {
+      display: flex;
+      flex-direction: column;
+      
+      gap: 60px;
+      @media screen and (min-width: 768px) {
+      
+          flex-direction: row;
+          gap: 165px;
+          }
+       @media screen and (min-width: 1200px) {
+          flex-direction: row;
+          gap: 70px;
+          }
+     }
+ 

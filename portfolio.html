@@ -8,16 +8,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/portfolio.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+  
 </head>
 <body>
   <!--Шапка сайта-->
   <header class="header">
     <div class="container header__container">
+      <a class="header__logo logo link" href="./index.html">Web<span class="logo logo--studio-black">Studio</span></a>
+      <button class="menu-button" type="button" data-menu-open>
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
       <nav class="navigate">
-        <a href="./index.html" class="link logo">Web<span class="logo logo--studio-black">Studio</span></a>
-  
         <ul class="navigate__list list">
           <li><a href="./index.html" class="navigate__link link">Студия</a></li>
           <li><a href="" class="navigate__link navigate__link--current link">Портфолио</a></li>
@@ -25,7 +29,7 @@
         </ul>
       </nav>
   
-      <ul class="contacts__list list">
+      <ul class="contacts contacts__list list">
         <li>
           <a class="contacts__link link" href="mailto:info@devstudio.com">
             <svg class="contacts__icon" width="16" height="12">
@@ -63,7 +67,19 @@
           <li class="portfolio__item card-item">
               <a href="/" class="portfolio__link link">
                 <div class="portfolio__picture">
-                  <img src="./images/img1.jpg" alt="box3" width="370">
+                  <img class="img"
+                    srcset="
+                        ./images/portfolio/w/img-1-354.jpg 354w,
+                        ./images/portfolio/w/img-1-370.jpg 370w,
+                        ./images/portfolio/w/img-1-450.jpg 450w,
+                        ./images/portfolio/w/img-1-708.jpg 708w,
+                        ./images/portfolio/w/img-1-740.jpg 740w,
+                        ./images/portfolio/w/img-1-900.jpg 900w "
+                    sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, 100vw" 
+                    src="./images/portfolio/w/img-1-354.jpg"
+                    alt="box1" width="450" >
+                 
+
                   <div class="portfolio-overlay">
                     <p class="portfolio-overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала
@@ -81,7 +97,18 @@
           <li class="portfolio__item card-item">
             <a href="/" class="portfolio__link link">
               <div class="portfolio__picture">
-                <img src="./images/img2.jpg" alt="box3" width="370">
+                <img class="img" 
+                  srcset="
+                        ./images/portfolio/w/img-2-354.jpg 354w,
+                        ./images/portfolio/w/img-2-370.jpg 370w,
+                        ./images/portfolio/w/img-2-450.jpg 450w,
+                        ./images/portfolio/w/img-2-708.jpg 708w,
+                        ./images/portfolio/w/img-2-740.jpg 740w,
+                        ./images/portfolio/w/img-2-900.jpg 900w"
+                  sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, 100vw" 
+                  src="./images/portfolio/w/img-2-354.jpg" alt="box2"
+                  width="450">
+                
                 <div class="portfolio-overlay">
                   <p class="portfolio-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала
@@ -99,7 +126,18 @@
           <li class="portfolio__item card-item">
              <a href="/" class="link portfolio__link">
               <div class="portfolio__picture">
-                <img src="./images/img3.jpg" alt="box3" width="370"> 
+                <img class="img" 
+                  srcset="
+                          ./images/portfolio/w/img-3-354.jpg 354w,
+                          ./images/portfolio/w/img-3-370.jpg 370w,
+                          ./images/portfolio/w/img-3-450.jpg 450w,
+                          ./images/portfolio/w/img-3-708.jpg 708w,
+                          ./images/portfolio/w/img-3-740.jpg 740w,
+                          ./images/portfolio/w/img-3-900.jpg 900w"
+                  sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, 100vw" 
+                  src="./images/portfolio/w/img-3-354.jpg" alt="box3"
+                  width="450">
+                
                 <div class="portfolio-overlay">
                   <p class="portfolio-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала
@@ -117,7 +155,18 @@
           <li class="portfolio__item card-item">
             <a href="/" class="link portfolio__link">
               <div class="portfolio__picture">
-                <img src="./images/img4.jpg" alt="box3" width="370">
+                <img class="img" 
+                  srcset="
+                        ./images/portfolio/w/img-4-354.jpg 354w,
+                        ./images/portfolio/w/img-4-370.jpg 370w,
+                        ./images/portfolio/w/img-4-450.jpg 450w,
+                        ./images/portfolio/w/img-4-708.jpg 708w,
+                        ./images/portfolio/w/img-4-740.jpg 740w,
+                        ./images/portfolio/w/img-4-900.jpg 900w "
+                  sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, 100vw" 
+                  src="./images/portfolio/w/img-4-354.jpg" alt="box4"
+                  width="450">
+                
                 <div class="portfolio-overlay">
                   <p class="portfolio-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала
@@ -135,7 +184,18 @@
            <li class="portfolio__item card-item">
             <a href="/" class="link portfolio__link">
               <div class="portfolio__picture">
-                <img src="./images/img5.jpg" alt="box3" width="370">
+                <img class="img" 
+                  srcset="
+                        ./images/portfolio/w/img-5-354.jpg 354w,
+                        ./images/portfolio/w/img-5-370.jpg 370w,
+                        ./images/portfolio/w/img-5-450.jpg 450w,
+                        ./images/portfolio/w/img-5-708.jpg 708w,
+                        ./images/portfolio/w/img-5-740.jpg 740w,
+                        ./images/portfolio/w/img-5-900.jpg 900w"
+                  sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, 100vw" 
+                  src="./images/portfolio/w/img-5-354.jpg" alt="box5"
+                  width="450">
+                
                 <div class="portfolio-overlay">
                   <p class="portfolio-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала
@@ -153,7 +213,18 @@
           <li class="portfolio__item card-item">
             <a href="/" class="link portfolio__link">
               <div class="portfolio__picture">
-                <img src="./images/img6.jpg" alt="box3" width="370">
+                <img class="img" 
+                  srcset="
+                        ./images/portfolio/w/img-6-354.jpg 354w,
+                        ./images/portfolio/w/img-6-370.jpg 370w,
+                        ./images/portfolio/w/img-6-450.jpg 450w,
+                        ./images/portfolio/w/img-6-708.jpg 708w,
+                        ./images/portfolio/w/img-6-740.jpg 740w,
+                        ./images/portfolio/w/img-6-900.jpg 900w"
+                  sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, 100vw" 
+                  src="./images/portfolio/w/img-6-354.jpg" alt="box6"
+                  width="450">
+                
                 <div class="portfolio-overlay">
                   <p class="portfolio-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала
@@ -171,7 +242,18 @@
           <li class="portfolio__item card-item">
             <a href="/" class="link portfolio__link">
               <div class="portfolio__picture">
-                <img src="./images/img7.jpg" alt="box3" width="370">
+                <img class="img" 
+                  srcset="
+                        ./images/portfolio/w/img-7-354.jpg 354w,
+                        ./images/portfolio/w/img-7-370.jpg 370w,
+                        ./images/portfolio/w/img-7-450.jpg 450w,
+                        ./images/portfolio/w/img-7-708.jpg 708w,
+                        ./images/portfolio/w/img-7-740.jpg 740w,
+                        ./images/portfolio/w/img-7-900.jpg 900w"
+                  sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, 100vw" 
+                  src="./images/portfolio/w/img-7-354.jpg" alt="box7"
+                  width="450">
+                
                 <div class="portfolio-overlay">
                   <p class="portfolio-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала
@@ -189,7 +271,17 @@
           <li class="portfolio__item card-item">
               <a href="/" class="link portfolio__link">
                 <div class="portfolio__picture">
-                  <img src="./images/img8.jpg" alt="box3" width="370">
+                  <img class="img" 
+                    srcset="
+                            ./images/portfolio/w/img-8-354.jpg 354w,
+                            ./images/portfolio/w/img-8-370.jpg 370w,
+                            ./images/portfolio/w/img-8-450.jpg 450w,
+                            ./images/portfolio/w/img-8-708.jpg 708w,
+                            ./images/portfolio/w/img-8-740.jpg 740w,
+                            ./images/portfolio/w/img-8-900.jpg 900w"
+                    sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, 100vw" src="./images/portfolio/w/img-8-354.jpg" alt="box8"
+                    width="450">
+                  
                   <div class="portfolio-overlay">
                     <p class="portfolio-overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала
@@ -207,7 +299,18 @@
           <li class="portfolio__item card-item">
               <a href="/" class="link portfolio__link">
                 <div class="portfolio__picture">
-                  <img src="./images/img9.jpg" alt="box3" width="370">
+                  <img class="img" 
+                    srcset="
+                          ./images/portfolio/w/img-9-354.jpg 354w,
+                          ./images/portfolio/w/img-9-370.jpg 370w,
+                          ./images/portfolio/w/img-9-450.jpg 450w,
+                          ./images/portfolio/w/img-9-708.jpg 708w,
+                          ./images/portfolio/w/img-9-740.jpg 740w,
+                          ./images/portfolio/w/img-9-900.jpg 900w"
+                    sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, 100vw" 
+                    src="./images/portfolio/w/img-9-354.jpg" alt="box9"
+                    width="450">
+                 
                   <div class="portfolio-overlay">
                     <p class="portfolio-overlay__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала
@@ -230,57 +333,61 @@
   <!--Футер-->                    
   <footer class="footer">
     <div class="container footer__container">
-      <div class="footer__item">
-        <a class="footer__logo logo link" href="./index.html">Web<span class="logo logo--studio-white">Studio</span></a>
+      <!-- <div class="footer__tablet">-->
+      <div class="footer__tablet">
+        <div class="footer__item">
+          <a class="footer__logo logo link" href="./index.html">Web<span class="logo logo--studio-white">Studio</span></a>
   
-        <address class="address">
-          <ul class="address__list list">
-            <li class="address__item">
-              <a href="https://goo.gl/maps/QcbovAggZcqLCEP46" target="_blank" rel="noopener noreferrer"
-                class="address__link address__link--white link">г. Киев, пр-т Леси Украинки, 26</a>
+          <address class="address">
+            <ul class="address__list list">
+              <li class="address__item">
+                <a href="https://goo.gl/maps/QcbovAggZcqLCEP46" target="_blank" rel="noopener noreferrer"
+                  class="address__link address__link--white link">г. Киев, пр-т Леси Украинки, 26</a>
+              </li>
+              <li class="address__item">
+                <a href="mailto:info@example.com" class="address__link link">info@example.com</a>
+              </li>
+              <li class="address__item">
+                <a href="tel:+380991111111" class="address__link link">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__item">
+          <p class="footer__text">присоединяйтесь</p>
+          <ul class="networks networks__list list">
+            <li class="networks__item">
+              <a class="networks__link networks__link--color link" href="/" aria-label="Посмотри Instagram">
+                <svg class="networks__icon networks__icon--color">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="address__item">
-              <a href="mailto:info@example.com" class="address__link link">info@example.com</a>
+            <li class="networks__item">
+              <a class="networks__link networks__link--color link" href="/" aria-label="Посмотри Twitter">
+                <svg class="networks__icon networks__icon--color">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="address__item">
-              <a href="tel:+380991111111" class="address__link link">+38 099 111 11 11</a>
+            <li class="networks__item">
+              <a class="networks__link networks__link--color link" href="/" aria-label="Посмотри Facebook">
+                <svg class="networks__icon networks__icon--color">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="networks__item">
+              <a class="networks__link networks__link--color link" href="/" aria-label="Посмотри Linkedin">
+                <svg class="networks__icon networks__icon--color">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
-      <div class="footer__item">
-        <p class="footer__text">присоединяйтесь</p>
-        <ul class="networks networks__list list">
-          <li class="networks__item">
-            <a class="networks__link networks__link--color link" href="/" aria-label="Посмотри Instagram">
-              <svg class="networks__icon networks__icon--color">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="networks__item">
-            <a class="networks__link networks__link--color link" href="/" aria-label="Посмотри Twitter">
-              <svg class="networks__icon networks__icon--color">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="networks__item">
-            <a class="networks__link networks__link--color link" href="/" aria-label="Посмотри Facebook">
-              <svg class="networks__icon networks__icon--color">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="networks__item">
-            <a class="networks__link networks__link--color link" href="/" aria-label="Посмотри Linkedin">
-              <svg class="networks__icon networks__icon--color">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
+  
   
       <div class="footer__item">
         <p class="footer__text">подпишитесь на рассылку</p>
@@ -295,10 +402,49 @@
   
         </form>
       </div>
-  
     </div>
   </footer>
+  <!--Mobile-mobile-->
+  <div class="menu-overlay" data-menu>
+  
+    <div class="menu-container">
+      <button class="menu-button" type="button" data-menu-close>
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-close-menu"></use>
+        </svg>
+      </button>
+  
+      <ul class="mobile__list list">
+        <li class="mobile__item"><a href="./index.html" class="mobile__link link">Студия</a></li>
+        <li class="mobile__item"><a href="" class="mobile__link mobile__link--current link">Портфолио</a></li>
+        <li class="mobile__item"><a href="" class="mobile__link link">Контакты</a></li>
+      </ul>
+  
+      <ul class="mobile-contacts__list list">
+        <li class="mobile-contacts__item">
+          <a class="mobile-contacts__link mobile-contacts__link--big link" href="tel:+380961111111">
+            +38 096 111 11 11
+          </a>
+        </li>
+        <li class="mobile-contacts__item">
+          <a class="mobile-contacts__link mobile-contacts__link--small link" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+  
+      <ul class="mobile-networks__list list">
+        <li class="mobile-networks__item"><a href="" class="mobile-networks__link link">Instagram</a></li>
+        <li class="mobile-networks__item"><a href="" class="mobile-networks__link link">Twitter</a></li>
+        <li class="mobile-networks__item"><a href="" class="mobile-networks__link link">Facebook</a></li>
+        <li class="mobile-networks__item"><a href="" class="mobile-networks__link link">LinkedIn</a></li>
+      </ul>
+  
+    </div>
+  </div>
+
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
   </body>
   
   </html>

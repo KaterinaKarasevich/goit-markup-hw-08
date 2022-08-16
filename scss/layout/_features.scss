@@ -1,8 +1,16 @@
 .features {
-  //@extend %section;
- @include section;
-
+  padding-top: 94px;
+  &__item {
+      --items: 1;
   
+      @media screen and (min-width: 768px) {
+        --items: 2;
+      }
+  
+      @media screen and (min-width: 1200px) {
+        --items: 4;
+      }
+    }
 
   &__title {
     margin-bottom: 10px;

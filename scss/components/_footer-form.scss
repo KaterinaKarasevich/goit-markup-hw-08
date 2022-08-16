@@ -1,6 +1,14 @@
 .footer-form {
     display: flex;
-    gap: 12px;
+    flex-direction: column;
+    gap: 20px;
+    
+   
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+      }
 
   &__input {
     width: 358px;

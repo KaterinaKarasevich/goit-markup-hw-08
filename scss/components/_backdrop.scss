@@ -12,6 +12,18 @@
   visibility: visible;
 
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  max-width: 480px;
+  max-height: 796px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 480px;
+    max-height: 796px;
+  }
+  @media screen and (min-width: 1200px) {
+     max-width: 1600px;
+    max-height: 1024px;
+    }
+
 }
 
 .is-hidden {

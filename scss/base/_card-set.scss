@@ -1,9 +1,20 @@
 .card-set {
     display: flex;
     flex-wrap: wrap;
+    gap: var(--indent);
+}
+
+.card-item {
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+
+
+/*.card-set {
+    display: flex;
+    flex-wrap: wrap;
     gap: var(--gap);
 }
 
 .card-item {
     flex-basis: calc((100% - (var(--item) - 1) * var(--gap)) / var(--item));
-}
+}*/

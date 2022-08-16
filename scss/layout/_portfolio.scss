@@ -2,7 +2,15 @@
   @include section;
   
   &__item {
-    --item: 3;
+    --items: 1;
+    
+      @media screen and (min-width: 768px) {
+        --items: 2;
+      }
+    
+      @media screen and (min-width: 1200px) {
+        --items: 3;
+      }
   }
 
   &__link {
@@ -45,11 +53,21 @@
 
 .portfolio-filter__list {
     display: flex;
-    gap: 8px;
-    justify-content: center;
+    flex-wrap: wrap;
+    
+    column-gap: 8px;
+    row-gap: 15px;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    
+    @media screen and (min-width: 768px) {
+          gap: 8px;
+          justify-content: center;
+          margin-top: 0;
+          margin-bottom: 50px;
+      }
 }
+
 
 .portfolio-filter__button {
     padding: 6px 22px;
@@ -66,7 +84,7 @@
     cursor: pointer;
     text-align: center;
     transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    
     &:hover,
     &:focus {
       color: #FFFFFF;
@@ -78,21 +96,35 @@
        position: absolute;
        top: 0;
        left: 0;
-  
+       padding: 77px 24px;
+       width: 450px;
+      height: 294px;
        transform: translateY(294px);
-       padding: 63px 24px;
-       width: 370px;
-       height: 294px;
+      
        background-color: rgba(33, 150, 243, 0.9);
        backdrop-filter: blur(1px);
   
        transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media screen and (min-width: 768px) {
+              padding: 49px 24px;
+              width: 354px;
+              height: 294px;
+              transform: translateY(294px);
+          }
+        
+          @media screen and (min-width: 1200px) {
+              padding: 63px 24px;
+              width: 370px;
+              height: 294px;
+              transform: translateY(294px);
+          }
   
        &__text {
   
          font-size: 18px;
          line-height: 28px;
-  
+        
          text-align: left;
          letter-spacing: 0.03em;
          color: #FFFFFF;
@@ -103,4 +135,17 @@
            transform: translateY(0);
          }
     }
+/*
+.portfolio__list {
+  --items: 1;
+
+  @media screen and (min-width: 768px) {
+    --items: 2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --items: 3;
+  }
+}*/
+
 

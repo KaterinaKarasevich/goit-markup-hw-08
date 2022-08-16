@@ -2,8 +2,16 @@
   @include section;
 
   &__item {
-    --item: 6;
-  }
+      --items: 2;
+  
+      @media screen and (min-width: 768px) {
+        --items: 3;
+      }
+  
+      @media screen and (min-width: 1200px) {
+        --items: 6;
+      }
+    }
 
   &__link {
     height: 92px;
