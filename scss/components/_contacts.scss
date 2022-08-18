@@ -51,17 +51,33 @@
     
   
   .contacts__icon-mail--small {
-      
-      @media screen and (min-width: 768px) { 
-          margin-right: 8px;
+      margin-right: 8px;
+      @media screen and (min-width: 1200px) { 
+          display: none; 
           }
-    }
+      }
   .contacts__icon-mail--big {
-      @media screen and (min-width: 1200px) {
-            //display: none;
-          margin-right: 10px;
+      margin-right: 10px;
+      @media screen and (max-width: 1199px) {
+          display: none;
           }
-    }
+      }
 
+
+    .contacts__icon-tel--small {
+      margin-right: 8px;
+  
+      @media screen and (min-width: 1200px) {
+        display: none;
+      }
+    }
+  
+    .contacts__icon-tel--big {
+      margin-right: 10px;
+  
+      @media screen and (max-width: 1199px) {
+        display: none;
+      }
+    }
   }
 

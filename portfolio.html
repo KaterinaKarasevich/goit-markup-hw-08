@@ -32,7 +32,10 @@
       <ul class="contacts contacts__list list">
         <li>
           <a class="contacts__link link" href="mailto:info@devstudio.com">
-            <svg class="contacts__icon" width="16" height="12">
+            <svg class="contacts__icon-mail contacts__icon-mail--big" width="16" height="12">
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>
+            <svg class="contacts__icon-mail contacts__icon-mail--small" width="14" height="12">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com
@@ -40,7 +43,10 @@
         </li>
         <li>
           <a class="contacts__link link" href="tel:+380961111111">
-            <svg class="contacts__icon" width="10" height="16">
+            <svg class="contacts__icon-tel contacts__icon-tel--big" width="10" height="16">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+            <svg class="contacts__icon-tel contacts__icon-tel--small" width="10" height="14">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
             +38 096 111 11 11
@@ -67,7 +73,7 @@
           <li class="portfolio__item card-item">
               <a href="/" class="portfolio__link link">
                 <div class="portfolio__picture">
-                  <img class="img"
+                  <!--<img class="img"
                     srcset="
                         ./images/portfolio/w/img-1-354.jpg 354w,
                         ./images/portfolio/w/img-1-370.jpg 370w,
@@ -77,38 +83,42 @@
                         ./images/portfolio/w/img-1-900.jpg 900w "
                     sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, 100vw" 
                     src="./images/portfolio/w/img-1-354.jpg"
-                    alt="box1" width="450" >
+                    alt="box1" width="450"> -->
                  
+                    <picture>
+                    <!-- desktop screen -->
+                    <source 
+                      media="(min-width: 1200px)" 
+                      srcset="./images/portfolio/img-1@1x_sm.webp 1x,
+                              ./images/portfolio/img-1@2x_sm.webp 2x" 
+                      type="image/webp"
 
-                  <div class="portfolio-overlay">
-                    <p class="portfolio-overlay__text">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала
-                      и сервисов. Все это позволит посетителю получить
-                      исчерпывающие сведения о компании или частном лице.
-                    </p>
-                  </div>
-                </div>
-                <div class="portfolio__desc">
-                  <h2 class="portfolio__title">Технокряк</h2>                 
-                  <p class="portfolio__text">Веб-сайт</p>
-              </div>
-            </a>
-          </li>
-          <li class="portfolio__item card-item">
-            <a href="/" class="portfolio__link link">
-              <div class="portfolio__picture">
-                <img class="img" 
-                  srcset="
-                        ./images/portfolio/w/img-2-354.jpg 354w,
-                        ./images/portfolio/w/img-2-370.jpg 370w,
-                        ./images/portfolio/w/img-2-450.jpg 450w,
-                        ./images/portfolio/w/img-2-708.jpg 708w,
-                        ./images/portfolio/w/img-2-740.jpg 740w,
-                        ./images/portfolio/w/img-2-900.jpg 900w"
-                  sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, 100vw" 
-                  src="./images/portfolio/w/img-2-354.jpg" alt="box2"
-                  width="450">
-                
+                      srcset="./images/portfolio/img-1@1x_sm.jpg 1x,
+                              ./images/portfolio/img-1@2x_sm.jpg 2x" 
+                      type="image/jpg">
+                      <!-- tablet screen -->
+                    <source 
+                        media="(min-width: 768px)"
+                        srcset="./images/portfolio/img-1@1x_mid.webp 1x,
+                                ./images/portfolio/img-1@2x_mid.webp 2x" 
+                        type="image/webp" 
+                        srcset="./images/portfolio/img-1@1x_mid.jpg 1x,
+                                ./images/portfolio/img-1@2x_mid.jpg 2x" 
+                        type="image/jpg">
+                      <!-- mobile screen -->
+                    <source 
+                         media="(max-width: 767px)"
+                        srcset="./images/portfolio/img-1@1x_lg.webp 1x,
+                                ./images/portfolio/img-1@2x_lg.webp 2x" 
+                        type="image/webp" 
+                        srcset="./images/portfolio/img-1@1x_lg.jpg 1x,
+                                ./images/portfolio/img-1@2x_lg.jpg 2x" 
+                        type="image/jpg">
+
+
+                    <img class="img" src="./images/portfolio/img-1@1x_lg.jpg" alt="box1" 
+                    width="450" height="294">
+                    </picture>
                 <div class="portfolio-overlay">
                   <p class="portfolio-overlay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала
@@ -116,27 +126,92 @@
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-              </div>
-                <div class="portfolio__desc">
-                  <h2 class="portfolio__title">Постер New Orlean vs Golden Star</h2>
-                  <p class="portfolio__text">Дизайн</p>
                 </div>
-             </a>
+                <div class="portfolio__desc">
+                  <h2 class="portfolio__title">Технокряк</h2>
+                  <p class="portfolio__text">Веб-сайт</p>
+                </div>
+                </a>
           </li>
+          <li class="portfolio__item card-item">
+            <a href="/" class="portfolio__link link">
+              <div class="portfolio__picture">
+               
+                <picture>
+                  <!-- desktop screen -->
+                  <source media="(min-width: 1200px)" 
+                          srcset="./images/portfolio/img-2@1x_sm.webp 1x,
+                                  ./images/portfolio/img-2@2x_sm.webp 2x" 
+                          type="image/webp"
+                          srcset="./images/portfolio/img-2@1x_sm.jpg 1x,
+                                  ./images/portfolio/img-2@2x_sm.jpg 2x" 
+                          type="image/jpg">
+                  <!-- tablet screen -->
+                  <source media="(min-width: 768px)" 
+                          srcset="./images/portfolio/img-2@1x_mid.webp 1x,
+                                  ./images/portfolio/img-2@2x_mid.webp 2x" 
+                          type="image/webp"
+                          srcset="./images/portfolio/img-2@1x_mid.jpg 1x,
+                                  ./images/portfolio/img-2@2x_mid.jpg 2x" 
+                          type="image/jpg">
+                  <!-- mobile screen -->
+                  <source media="(max-width: 767px)" 
+                          srcset="./images/portfolio/img-2@1x_lg.webp 1x,
+                                  ./images/portfolio/img-2@2x_lg.webp 2x" 
+                          type="image/webp"
+                          srcset="./images/portfolio/img-2@1x_lg.jpg 1x,
+                                  ./images/portfolio/img-2@2x_lg.jpg 2x" type="image/jpg">
+          
+          
+                  <img class="img" src="./images/portfolio/img-2@1x_lg.jpg" alt="box2" width="450" height="294">
+                </picture>
+                <div class="portfolio-overlay">
+                  <p class="portfolio-overlay__text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала
+                    и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                </div>
+              <div class="portfolio__desc">
+                <h2 class="portfolio__title">Постер New Orlean vs Golden Star</h2>
+                <p class="portfolio__text">Дизайн</p>
+              </div>
+              </a>
+              </li>
+
           <li class="portfolio__item card-item">
              <a href="/" class="link portfolio__link">
               <div class="portfolio__picture">
-                <img class="img" 
-                  srcset="
-                          ./images/portfolio/w/img-3-354.jpg 354w,
-                          ./images/portfolio/w/img-3-370.jpg 370w,
-                          ./images/portfolio/w/img-3-450.jpg 450w,
-                          ./images/portfolio/w/img-3-708.jpg 708w,
-                          ./images/portfolio/w/img-3-740.jpg 740w,
-                          ./images/portfolio/w/img-3-900.jpg 900w"
-                  sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, 100vw" 
-                  src="./images/portfolio/w/img-3-354.jpg" alt="box3"
-                  width="450">
+                <picture>
+                  <!-- desktop screen -->
+                  <source media="(min-width: 1200px)" 
+                          srcset="./images/portfolio/img-3@1x_sm.webp 1x,
+                                  ./images/portfolio/img-3@2x_sm.webp 2x" 
+                          type="image/webp" 
+                          srcset="./images/portfolio/img-3@1x_sm.jpg 1x,
+                                  ./images/portfolio/img-3@2x_sm.jpg 2x" 
+                          type="image/jpg">
+                  <!-- tablet screen -->
+                  <source media="(min-width: 768px)" 
+                          srcset="./images/portfolio/img-3@1x_mid.webp 1x,
+                                 ./images/portfolio/img-3@2x_mid.webp 2x" 
+                          type="image/webp" 
+                          srcset="./images/portfolio/img-3@1x_mid.jpg 1x,
+                                  ./images/portfolio/img-3@2x_mid.jpg 2x" 
+                          type="image/jpg">
+                  <!-- mobile screen -->
+                  <source media="(max-width: 767px)" 
+                          srcset="./images/portfolio/img-3@1x_lg.webp 1x,
+                                  ./images/portfolio/img-3@2x_lg.webp 2x" 
+                          type="image/webp" 
+                          srcset="./images/portfolio/img-3@1x_lg.jpg 1x,
+                                   ./images/portfolio/img-3@2x_lg.jpg 2x" 
+                          type="image/jpg">
+                
+                
+                  <img class="img" src="./images/portfolio/img-3@1x_lg.jpg" alt="box3" width="450" height="294">
+                </picture>
                 
                 <div class="portfolio-overlay">
                   <p class="portfolio-overlay__text">
@@ -155,17 +230,29 @@
           <li class="portfolio__item card-item">
             <a href="/" class="link portfolio__link">
               <div class="portfolio__picture">
-                <img class="img" 
-                  srcset="
-                        ./images/portfolio/w/img-4-354.jpg 354w,
-                        ./images/portfolio/w/img-4-370.jpg 370w,
-                        ./images/portfolio/w/img-4-450.jpg 450w,
-                        ./images/portfolio/w/img-4-708.jpg 708w,
-                        ./images/portfolio/w/img-4-740.jpg 740w,
-                        ./images/portfolio/w/img-4-900.jpg 900w "
-                  sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, 100vw" 
-                  src="./images/portfolio/w/img-4-354.jpg" alt="box4"
-                  width="450">
+                  <picture>
+                    <!-- desktop screen -->
+                    <source media="(min-width: 1200px)" 
+                            srcset="./images/portfolio/img-4@1x_sm.webp 1x,
+                                    ./images/portfolio/img-4@2x_sm.webp 2x" type="image/webp" 
+                            srcset="./images/portfolio/img-4@1x_sm.jpg 1x,
+                                     ./images/portfolio/img-4@2x_sm.jpg 2x" type="image/jpg">
+                    <!-- tablet screen -->
+                    <source media="(min-width: 768px)" 
+                            srcset="./images/portfolio/img-4@1x_mid.webp 1x,
+                                    ./images/portfolio/img-4@2x_mid.webp 2x" type="image/webp" 
+                            srcset="./images/portfolio/img-4@1x_mid.jpg 1x,
+                                    ./images/portfolio/img-4@2x_mid.jpg 2x" type="image/jpg">
+                    <!-- mobile screen -->
+                    <source media="(max-width: 767px)" 
+                            srcset="./images/portfolio/img-4@1x_lg.webp 1x,
+                                    ./images/portfolio/img-4@2x_lg.webp 2x" type="image/webp" 
+                            srcset="./images/portfolio/img-4@1x_lg.jpg 1x,
+                                    ./images/portfolio/img-4@2x_lg.jpg 2x" type="image/jpg">
+                  
+                  
+                    <img class="img" src="./images/portfolio/img-4@1x_lg.jpg" alt="box4" width="450" height="294">
+                  </picture>
                 
                 <div class="portfolio-overlay">
                   <p class="portfolio-overlay__text">
@@ -184,17 +271,29 @@
            <li class="portfolio__item card-item">
             <a href="/" class="link portfolio__link">
               <div class="portfolio__picture">
-                <img class="img" 
-                  srcset="
-                        ./images/portfolio/w/img-5-354.jpg 354w,
-                        ./images/portfolio/w/img-5-370.jpg 370w,
-                        ./images/portfolio/w/img-5-450.jpg 450w,
-                        ./images/portfolio/w/img-5-708.jpg 708w,
-                        ./images/portfolio/w/img-5-740.jpg 740w,
-                        ./images/portfolio/w/img-5-900.jpg 900w"
-                  sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, 100vw" 
-                  src="./images/portfolio/w/img-5-354.jpg" alt="box5"
-                  width="450">
+                    <picture>
+                      <!-- desktop screen -->
+                      <source media="(min-width: 1200px)" 
+                              srcset="./images/portfolio/img-5@1x_sm.webp 1x,
+                                      ./images/portfolio/img-5@2x_sm.webp 2x" type="image/webp" 
+                              srcset="./images/portfolio/img-5@1x_sm.jpg 1x,
+                                      ./images/portfolio/img-5@2x_sm.jpg 2x" type="image/jpg">
+                      <!-- tablet screen -->
+                      <source media="(min-width: 768px)" 
+                              srcset="./images/portfolio/img-5@1x_mid.webp 1x,
+                                      ./images/portfolio/img-5@2x_mid.webp 2x" type="image/webp" 
+                              srcset="./images/portfolio/img-5@1x_mid.jpg 1x,
+                                      ./images/portfolio/img-5@2x_mid.jpg 2x" type="image/jpg">
+                      <!-- mobile screen -->
+                      <source media="(max-width: 767px)" 
+                              srcset="./images/portfolio/img-5@1x_lg.webp 1x,
+                                      ./images/portfolio/img-5@2x_lg.webp 2x" type="image/webp" 
+                              srcset="./images/portfolio/img-5@1x_lg.jpg 1x,
+                                      ./images/portfolio/img-5@2x_lg.jpg 2x" type="image/jpg">
+                    
+                    
+                      <img class="img" src="./images/portfolio/img-5@1x_lg.jpg" alt="box5" width="450" height="294">
+                    </picture>
                 
                 <div class="portfolio-overlay">
                   <p class="portfolio-overlay__text">
@@ -213,17 +312,28 @@
           <li class="portfolio__item card-item">
             <a href="/" class="link portfolio__link">
               <div class="portfolio__picture">
-                <img class="img" 
-                  srcset="
-                        ./images/portfolio/w/img-6-354.jpg 354w,
-                        ./images/portfolio/w/img-6-370.jpg 370w,
-                        ./images/portfolio/w/img-6-450.jpg 450w,
-                        ./images/portfolio/w/img-6-708.jpg 708w,
-                        ./images/portfolio/w/img-6-740.jpg 740w,
-                        ./images/portfolio/w/img-6-900.jpg 900w"
-                  sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, 100vw" 
-                  src="./images/portfolio/w/img-6-354.jpg" alt="box6"
-                  width="450">
+            <picture>
+              <!-- desktop screen -->
+              <source media="(min-width: 1200px)" 
+                      srcset="./images/portfolio/img-6@1x_sm.webp 1x,
+                              ./images/portfolio/img-6@2x_sm.webp 2x" type="image/webp" 
+                      srcset="./images/portfolio/img-6@1x_sm.jpg 1x,
+                              ./images/portfolio/img-6@2x_sm.jpg 2x" type="image/jpg">
+              <!-- tablet screen -->
+              <source media="(min-width: 768px)" 
+                      srcset="./images/portfolio/img-6@1x_mid.webp 1x,
+                              ./images/portfolio/img-6@2x_mid.webp 2x" type="image/webp" 
+                      srcset="./images/portfolio/img-6@1x_mid.jpg 1x,
+                              ./images/portfolio/img-6@2x_mid.jpg 2x" type="image/jpg">
+              <!-- mobile screen -->
+              <source media="(max-width: 767px)" srcset="./images/portfolio/img-1@1x_lg.webp 1x,
+                              ./images/portfolio/img-6@2x_lg.webp 2x" type="image/webp" 
+                      srcset="./images/portfolio/img-6@1x_lg.jpg 1x,
+                              ./images/portfolio/img-6@2x_lg.jpg 2x" type="image/jpg">
+                        
+              <img class="img" src="./images/portfolio/img-6@1x_lg.jpg" alt="box6" width="450" height="294">
+            </picture>
+               
                 
                 <div class="portfolio-overlay">
                   <p class="portfolio-overlay__text">
@@ -242,17 +352,29 @@
           <li class="portfolio__item card-item">
             <a href="/" class="link portfolio__link">
               <div class="portfolio__picture">
-                <img class="img" 
-                  srcset="
-                        ./images/portfolio/w/img-7-354.jpg 354w,
-                        ./images/portfolio/w/img-7-370.jpg 370w,
-                        ./images/portfolio/w/img-7-450.jpg 450w,
-                        ./images/portfolio/w/img-7-708.jpg 708w,
-                        ./images/portfolio/w/img-7-740.jpg 740w,
-                        ./images/portfolio/w/img-7-900.jpg 900w"
-                  sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, 100vw" 
-                  src="./images/portfolio/w/img-7-354.jpg" alt="box7"
-                  width="450">
+              <picture>
+                <!-- desktop screen -->
+                <source media="(min-width: 1200px)" 
+                        srcset="./images/portfolio/img-7@1x_sm.webp 1x,
+                                ./images/portfolio/img-7@2x_sm.webp 2x" type="image/webp" 
+                        srcset="./images/portfolio/img-7@1x_sm.jpg 1x,
+                                ./images/portfolio/img-7@2x_sm.jpg 2x" type="image/jpg">
+                <!-- tablet screen -->
+                <source media="(min-width: 768px)" 
+                        srcset="./images/portfolio/img-7@1x_mid.webp 1x,
+                                ./images/portfolio/img-7@2x_mid.webp 2x" type="image/webp" 
+                        srcset="./images/portfolio/img-7@1x_mid.jpg 1x,
+                                ./images/portfolio/img-7@2x_mid.jpg 2x" type="image/jpg">
+                <!-- mobile screen -->
+                <source media="(max-width: 767px)" 
+                        srcset="./images/portfolio/img-7@1x_lg.webp 1x,
+                                ./images/portfolio/img-7@2x_lg.webp 2x" type="image/webp" 
+                        srcset="./images/portfolio/img-7@1x_lg.jpg 1x,
+                                ./images/portfolio/img-7@2x_lg.jpg 2x" type="image/jpg">
+                            
+                <img class="img" src="./images/portfolio/img-7@1x_lg.jpg" alt="box7" width="450" height="294">
+              </picture>
+               
                 
                 <div class="portfolio-overlay">
                   <p class="portfolio-overlay__text">
@@ -271,16 +393,30 @@
           <li class="portfolio__item card-item">
               <a href="/" class="link portfolio__link">
                 <div class="portfolio__picture">
-                  <img class="img" 
-                    srcset="
-                            ./images/portfolio/w/img-8-354.jpg 354w,
-                            ./images/portfolio/w/img-8-370.jpg 370w,
-                            ./images/portfolio/w/img-8-450.jpg 450w,
-                            ./images/portfolio/w/img-8-708.jpg 708w,
-                            ./images/portfolio/w/img-8-740.jpg 740w,
-                            ./images/portfolio/w/img-8-900.jpg 900w"
-                    sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, 100vw" src="./images/portfolio/w/img-8-354.jpg" alt="box8"
-                    width="450">
+              <picture>
+                <!-- desktop screen -->
+                <source media="(min-width: 1200px)" 
+                        srcset = "./images/portfolio/img-8@1x_sm.webp 1x,
+                                ./images/portfolio/img-8@2x_sm.webp 2x" type = "image/webp" 
+                        srcset="./images/portfolio/img-8@1x_sm.jpg 1x,
+                                ./images/portfolio/img-8@2x_sm.jpg 2x" type="image/jpg">
+                <!-- tablet screen -->
+                <source media="(min-width: 768px)" 
+                        srcset="./images/portfolio/img-8@1x_mid.webp 1x,
+                                ./images/portfolio/img-8@2x_mid.webp 2x" type="image/webp" 
+                        srcset="./images/portfolio/img-8@1x_mid.jpg 1x,
+                                ./images/portfolio/img-8@2x_mid.jpg 2x" type="image/jpg">
+                <!-- mobile screen -->
+                <source media="(max-width: 767px)" 
+                        srcset="./images/portfolio/img-8@1x_lg.webp 1x,
+                                ./images/portfolio/img-8@2x_lg.webp 2x" type="image/webp" 
+                        srcset="./images/portfolio/img-8@1x_lg.jpg 1x,
+                                ./images/portfolio/img-8@2x_lg.jpg 2x" type="image/jpg">
+              
+              
+                <img class="img" src="./images/portfolio/img-8@1x_lg.jpg" alt="box8" width="450" height="294">
+              </picture>
+                
                   
                   <div class="portfolio-overlay">
                     <p class="portfolio-overlay__text">
@@ -299,17 +435,30 @@
           <li class="portfolio__item card-item">
               <a href="/" class="link portfolio__link">
                 <div class="portfolio__picture">
-                  <img class="img" 
-                    srcset="
-                          ./images/portfolio/w/img-9-354.jpg 354w,
-                          ./images/portfolio/w/img-9-370.jpg 370w,
-                          ./images/portfolio/w/img-9-450.jpg 450w,
-                          ./images/portfolio/w/img-9-708.jpg 708w,
-                          ./images/portfolio/w/img-9-740.jpg 740w,
-                          ./images/portfolio/w/img-9-900.jpg 900w"
-                    sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, 100vw" 
-                    src="./images/portfolio/w/img-9-354.jpg" alt="box9"
-                    width="450">
+                <picture>
+                  <!-- desktop screen -->
+                  <source media="(min-width: 1200px)" 
+                          srcset="./images/portfolio/img-9@1x_sm.webp 1x,
+                                  ./images/portfolio/img-9@2x_sm.webp 2x" type="image/webp" 
+                          srcset="./images/portfolio/img-9@1x_sm.jpg 1x,
+                                  ./images/portfolio/img-9@2x_sm.jpg 2x" type="image/jpg">
+                  <!-- tablet screen -->
+                  <source media="(min-width: 768px)" 
+                          srcset="./images/portfolio/img-9@1x_mid.webp 1x,
+                                  ./images/portfolio/img-9@2x_mid.webp 2x" type="image/webp" 
+                          srcset="./images/portfolio/img-9@1x_mid.jpg 1x,
+                                  ./images/portfolio/img-9@2x_mid.jpg 2x" type="image/jpg">
+                  <!-- mobile screen -->
+                  <source media="(max-width: 767px)" 
+                          srcset="./images/portfolio/img-9@1x_lg.webp 1x,
+                                  ./images/portfolio/img-9@2x_lg.webp 2x" type="image/webp" 
+                          srcset="./images/portfolio/img-9@1x_lg.jpg 1x,
+                                  ./images/portfolio/img-9@2x_lg.jpg 2x" type="image/jpg">
+                
+                
+                  <img class="img" src="./images/portfolio/img-9@1x_lg.jpg" alt="box9" width="450" height="294">
+                </picture>
+                  
                  
                   <div class="portfolio-overlay">
                     <p class="portfolio-overlay__text">

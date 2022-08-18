@@ -2,24 +2,30 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: center;
     
    
     @media screen and (min-width: 1200px) {
         display: flex;
         flex-direction: row;
         gap: 12px;
+        
       }
 
   &__input {
-    width: 358px;
+    width: 100%;
+    max-width: 450px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    background-color: #2F303A;
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 4px;
     padding: 16px;
     font-size: 16px;
     line-height: calc(20 / 16);
     color: #FFFFFF;
     outline: transparent;
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+     }
 
     &:hover,
     &:focus {

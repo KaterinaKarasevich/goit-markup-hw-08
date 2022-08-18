@@ -2,6 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     gap: var(--indent);
+    @include mq(tab) {
+        --items: 2;
+    }
+    
+    @include mq(desk) {
+       --items: 4;
+    }
 }
 
 .card-item {
