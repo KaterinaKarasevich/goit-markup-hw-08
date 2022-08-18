@@ -24,7 +24,7 @@
     color: #FFFFFF;
     outline: transparent;
     @media screen and (min-width: 1200px) {
-        width: 358px;
+        max-width: 358px;
      }
 
     &:hover,
