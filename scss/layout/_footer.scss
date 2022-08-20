@@ -42,7 +42,6 @@
 
     &__text {
       margin-bottom: 20px;
-      margin-top: 10px;
       font-weight: 700;
       line-height: calc(16 / 14);
       text-transform: uppercase;
@@ -61,6 +60,8 @@
       @media screen and (min-width: 768px) {
       
           flex-direction: row;
+          align-items: baseline;
+          justify-content: center;
           gap: 165px;
           }
        @media screen and (min-width: 1200px) {
